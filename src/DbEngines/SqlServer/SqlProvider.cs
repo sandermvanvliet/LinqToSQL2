@@ -1659,7 +1659,10 @@ namespace System.Data.Linq.DbEngines.SqlServer
 					case SqlServerProviderMode.Sql2008:
 						_typeProvider = SqlTypeSystem.Create2008Provider();
 						break;
-					case SqlServerProviderMode.SqlCE:
+                    case SqlServerProviderMode.Sql2012:
+				        _typeProvider = SqlTypeSystem.Create2012Provider();
+				        break;
+                    case SqlServerProviderMode.SqlCE:
 						_typeProvider = SqlTypeSystem.CreateCEProvider();
 						break;
 					default:

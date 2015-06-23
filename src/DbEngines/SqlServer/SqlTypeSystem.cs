@@ -21,9 +21,14 @@ namespace System.Data.Linq.DbEngines.SqlServer
 		internal static TypeSystemProvider Create2008Provider()
 		{
 			return new Sql2008Provider();
-		}
+        }
 
-		internal static TypeSystemProvider CreateCEProvider()
+        public static TypeSystemProvider Create2012Provider()
+        {
+            return new Sql2012Provider();
+        }
+
+        internal static TypeSystemProvider CreateCEProvider()
 		{
 			return new SqlCEProvider();
 		}
@@ -138,6 +143,5 @@ namespace System.Data.Linq.DbEngines.SqlServer
 					return typeof(object);
 			}
 		}
-
 	}
 }

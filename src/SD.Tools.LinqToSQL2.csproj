@@ -54,6 +54,7 @@
     <Compile Include="ChangeManagement\ReadOnlyChangeTracker.cs" />
     <Compile Include="ChangeManagement\StandardChangeTracker.cs" />
     <Compile Include="DbEngines\SqlServer\CommandTextProducer.cs" />
+    <Compile Include="DbEngines\SqlServer\Sql2012Provider.cs" />
     <Compile Include="DbEngines\SqlServer\SqlHelpers.cs" />
     <Compile Include="Provider\Common\ColumnNominator.cs" />
     <Compile Include="Provider\Common\CompatibilityAnnotation.cs" />
